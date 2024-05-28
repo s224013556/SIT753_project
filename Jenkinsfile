@@ -14,8 +14,11 @@ pipeline {
                     // Create a directory for artifacts if it doesn't exist
                     sh 'mkdir -p artifacts'
                     
-                    // Copy HTML, CSS, and image files to the artifacts directory
-                    sh 'cp -r * artifacts/'
+                    // Copy all files and directories to the artifacts directory, excluding the artifacts directory itself
+                    sh '''
+                        mkdir -p artifacts
+                        find . -maxdepth 1 ! -name artifacts ! -name . -exec cp -r {} artifacts/ \;
+                    '''
                 }
                 
                 // Archive the artifacts
