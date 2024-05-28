@@ -34,6 +34,16 @@ pipeline {
                 sh 'npm test' // Example for running tests in a Node.js project
             }
         }
+         stage('Deploy') {
+            steps {
+                // Use Docker Pipeline to deploy the application
+                script {
+                    docker.withServer('tcp://your-docker-host:2375') {
+                        docker.image('your-application-image').run()
+                    }
+                }
+            }
+
     }
     
     post {
