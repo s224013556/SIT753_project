@@ -15,7 +15,7 @@ pipeline {
                     sh 'mkdir -p artifacts'
                     
                     // Copy all files and directories to the artifacts directory, excluding the artifacts directory itself
-                    sh '''
+                    sh '''#!/bin/bash
                         mkdir -p artifacts
                         find . -maxdepth 1 ! -name artifacts ! -name . -exec cp -r {} artifacts/ \;
                     '''
