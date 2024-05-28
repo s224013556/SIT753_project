@@ -2,10 +2,24 @@ pipeline {
     agent any
     
     stages {
+        stage('Checkout') {
+            steps {
+                // Checkout the code from the repository using stored credentials
+                git credentialsId: 'github-credentials', url: 'https://github.com/s224013556/SIT753_project.git'
+            }
+        }
         stage('Build') {
             steps {
-                // Your build commands here
-                sh 'npm install' // Example for a Node.js project
+                script {
+                    // Create a directory for artifacts if it doesn't exist
+                    sh 'mkdir -p artifacts'
+                    
+                    // Copy HTML, CSS, and image files to the artifacts directory
+                    sh 'cp -r *.html *.css images/ artifacts/'
+                }
+                
+                // Archive the artifacts
+                archiveArtifacts artifacts: 'artifacts/**/*', allowEmptyArchive: true
             }
         }
         stage('Test') {
