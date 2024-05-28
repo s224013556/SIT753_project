@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the code from the repository using stored credentials
-                git credentialsId: 'github-credentials', url: 'https://github.com/s224013556/SIT753_project.git'
+                git credentialsId: '26153eea-bc63-41ff-9038-6cf30315c9da', url: 'https://github.com/s224013556/SIT753_project.git'
             }
         }
         stage('Build') {
