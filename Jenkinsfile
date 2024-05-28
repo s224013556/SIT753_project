@@ -14,11 +14,14 @@ pipeline {
                     // Create a directory for artifacts if it doesn't exist
                     sh 'mkdir -p artifacts'
                     
-                    // Copy all files and directories to the artifacts directory, excluding the artifacts directory itself
-                    sh '''#!/bin/bash
-                        mkdir -p artifacts
-                        find . -maxdepth 1 ! -name artifacts ! -name . -exec cp -r {} artifacts/ \;
-                    '''
+                    // Get a list of files and directories to copy, excluding 'artifacts'
+                    def items = sh(script: 'ls -A | grep -v artifacts', returnStdout: true).trim().split("\n")
+
+                    // Copy each item to the artifacts directory
+                    for (item in items) {
+                        sh "cp -r ${item} artifacts/"
+                        }
+
                 }
                 
                 // Archive the artifacts
