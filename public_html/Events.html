@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/nani/SIT774/node_server_template_7.5/footer.css">
+    <title>dKin Foods - Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D');
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #logo {
+            max-width: 150px;
+            height: auto;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .event-card {
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 30px 0;
+        }
+
+        .footer-logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .footer-contact {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .footer-social a {
+            color: #ffffff;
+            margin-right: 15px;
+        }
+
+        .footer-menu a {
+            color: #ffffff;
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+
+        .footer-menu a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="Images/logo.png" alt="Restaurant Logo">
+        <h1>dKin Food Palace</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Reservation.html">Reservations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Order.html">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ContactUs.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h2 style="color: #f4f4f4;">Upcoming Events</h2>
+
+            <div class="row">
+                <!-- Event 1 -->
+                <div class="col-md-4">
+                    <div class="card event-card">
+                        <img src="https://media.timeout.com/images/103459975/750/562/image.jpg" class="card-img-top" alt="Event 1 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Event 1</h5>
+                            <p class="card-text">Join us for an exquisite dining experience at our rooftop venue.
+                                Enjoy
+                                live music and a special menu crafted for the evening.</p>
+                            <p class="card-text"><small class="text-muted">Venue: Rooftop Terrace</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="col-md-4">
+                    <div class="card event-card">
+                        <img src="https://brunchcafe.com/wp-content/uploads/2022/11/Planning-a-Menu-for-a-Brunch-Event-.jpg" class="card-img-top" alt="Event 2 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Event 2</h5>
+                            <p class="card-text">Celebrate the weekend with our themed brunch. Delicious food,
+                                refreshing
+                                drinks, and a lively atmosphere.</p>
+                            <p class="card-text"><small class="text-muted">Venue: Main Dining Hall</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="col-md-4">
+                    <div class="card event-card">
+                        <img src="https://www.stsupery.com/wp-content/uploads/2021/11/Event-WIne-Blog-Image.png" class="card-img-top" alt="Event 3 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Event 3</h5>
+                            <p class="card-text">Wine and dine under the stars at our garden party. A perfect
+                                evening of
+                                fine wine, gourmet food, and live entertainment.</p>
+                            <p class="card-text"><small class="text-muted">Venue: Garden Pavilion</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="footer-logo">Your Logo</div>
+                <p class="footer-contact">123 Main Street, Cityville, State, 12345<br>
+                    Email: info@example.com<br>
+                    Phone: +1 (123) 456-7890</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <h5 class="mb-4">Quick Links</h5>
+                <div class="footer-menu">
+                    <a href="Home.html">Home</a>
+                    <a href="Aboutus.html">About Us</a>
+                    <a href="Menu.html">Menu</a>
+                    <a href="ContactUs.html">Contact</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <h5 class="mb-4">Newsletter</h5>
+                <p>Subscribe to our newsletter for the latest updates.</p>
+                <form class="subscribe-form">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>

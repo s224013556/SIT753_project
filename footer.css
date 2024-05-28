@@ -1,0 +1,36 @@
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 30px 0;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-contact {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-social a {
+    color: #ffffff;
+    margin-right: 15px;
+}
+
+.footer-menu a {
+    color: #ffffff;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.footer-menu a:hover {
+    text-decoration: underline;
+}
+
+.subscribe-form {
+    margin-top: 20px;
+}
