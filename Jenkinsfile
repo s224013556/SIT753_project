@@ -15,7 +15,7 @@ pipeline {
                     sh 'mkdir -p artifacts'
                     
                     // Copy HTML, CSS, and image files to the artifacts directory
-                    sh 'cp -r *.html *.css images/ artifacts/'
+                    sh 'cp -r * artifacts/'
                 }
                 
                 // Archive the artifacts
